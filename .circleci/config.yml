@@ -54,17 +54,12 @@ jobs:
 
   test_image:
     docker:
-      - image: $DOCKER_USERNAME/SciAppsDinDMaster:latest
+      - image: $DOCKER_USERNAME/sciappsdindmaster:latest
         environment:
           <<: *image_config
 
     steps:
       - checkout
-
-      - run:
-          name: start Xvfb for phantomjs test
-          # command: Xvfb :99
-          # background: true
 
       - run:
           name: bats tests
