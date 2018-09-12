@@ -54,7 +54,7 @@ jobs:
 
   test_image:
     docker:
-      - image: $DOCKER_USERNAME/sciappsdindmaster:latest
+      - image: $DOCKER_USERNAME/sciappsdind:latest
         environment:
           <<: *image_config
 
