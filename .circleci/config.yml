@@ -84,8 +84,7 @@ workflows:
   version: 2
   dockerfile_wizard:
     jobs:
-      - build:
-
+      - build
       - test_image:
           requires:
             - build
