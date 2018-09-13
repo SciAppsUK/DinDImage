@@ -1,8 +1,9 @@
 #!/bin/bash
-
+# Docker 18.06 users APK v3.7
+# (https://github.com/docker-library/docker/blob/595ad0c92090937dcb7c200900fb97e36d36c412/18.06/Dockerfile)
 echo "FROM docker:18.06.1-ce-git"
 
-echo "RUN apk --update add --no-cache py-pip=9.0.0-r1 unzip bash perl curl curl-dev jq"
+echo "RUN apk --update add --no-cache py2-pip unzip bash perl curl curl-dev jq"
 
 echo "RUN pip install docker-compose==1.22.0 awscli==1.16.12"
 
